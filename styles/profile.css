@@ -1,0 +1,323 @@
+.main-content .right {
+    /*display: inline-block;*/
+    margin-left: 240px;
+}
+
+.main-content .left {
+    width: 230px;
+    height: 500px;
+    display: inline-block;
+    position: fixed;
+}
+
+.profile.container {
+    min-height: 245px;
+}
+
+.user-name-data {
+    float: left;
+    height: 179px;
+    display: flex;
+}
+
+.user-name-data-container {
+    margin: auto;
+}
+
+.user-big-title {
+    font-size: 2.2em;
+    color: white;
+    margin: 0;
+}
+
+.user-big-role {
+    font-size: 1em;
+    color: white;
+    margin: 0;
+}
+
+.main-profilepic {
+    width: 170px;
+    height: 170px;
+    float: right;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+.action-button-container {
+    border-top: 1px solid #ffffff52;
+    padding: 15px;
+    padding-bottom: 5px;
+}
+
+.profile-data {
+    height: 180px;
+    padding: 15px;
+}
+
+.profiledata {
+    margin-top: 15px;
+}
+
+.button-type1 {
+    border: 1px solid #0000002e;
+    height: 30px;
+    border-radius: 5px;
+    background: none;
+    background-color: #0000002b;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    color: #ffffffeb;
+    outline: none;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.button-type2 {
+    border: 1px solid #0000002e;
+    height: 30px;
+    border-radius: 5px;
+    background: none;
+    background-color: #0000002b;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    color: #ffffffeb;
+    outline: none;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.button-type1.disabled {
+    background-color: #00000075;
+    color: #ffffff73;
+}
+
+.button-type1.disabled:hover {
+    background-color: #00000075;
+    color: #ffffff73;
+    cursor: default;
+}
+
+.button-type1:hover, .button-type2:hover {
+    cursor: pointer;
+    background-color: #ffffffd4;
+    color: #000000d1;
+}
+
+.button-type1 i, .button-type2 i {
+    margin-right: 5px;
+}
+
+.action-buttons-title {
+    color: white;
+    font-family: roboto_bold;
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+.user-data-table {
+    color: white;
+    width: 100%;
+    font-size: 0.9em;
+    table-layout: fixed;
+}
+
+.user-data-table tr {
+    height: 25px;
+}
+
+.user-data-table tr td:nth-child(2) {
+    font-family: roboto_bold;
+}
+
+.user-data-table-header {
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.user-data-table-header tr th {
+    font-family: roboto_bold;
+    text-align: left;
+    border-bottom: 1px solid #ffffff52;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.user-data-table-header tr td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.user-data-table-header tr:hover {
+    background-color: #ffffff00;
+    transition: all 0.1s ease-in-out;
+}
+
+.user-data-table-header tr:nth-child(1):hover {
+    background-color: #ffffff00;
+}
+
+.user-data-table-header tr:hover {
+    background-color: #ffffff26;
+}
+
+.tableheader {
+    padding-bottom: 15px;
+}
+
+.user-list-container {
+    box-shadow: 0px 0px 5px 1px #00000085;
+    background-color: #00000038;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-left: 5px;
+    backdrop-filter: saturate(100%) blur(20px);
+}
+
+.user-ullist {
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ffffff52;
+}
+
+.user-ullist li img {
+    width: 35px;
+    object-fit: contain;
+}
+
+.user-ullist li {
+    display: flex;
+    border-top: 1px solid #ffffff52;
+    border-left: 0px solid white;
+    background-color: #ffffff00;
+    transition: all 0.1s ease-in-out;
+    color: #ffffffbf;
+}
+
+.user-ullist li span {
+    margin: auto;
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+.user-ullist .active {
+    border-left: 3px solid white;
+    background-color: #ffffff26;
+    cursor: pointer;
+    color: white;
+}
+
+.user-ullist li:hover {
+    border-left: 3px solid white;
+    background-color: #ffffff26;
+    cursor: pointer;
+    color: white;
+}
+
+.list-controls {
+    display: flex;
+    color: #ffffffbf;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.list-controls .lefticon {
+    float: left;
+    width: 20px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.list-controls .righticon {
+    float: right;
+    width: 20px;
+    margin-top: 10px;
+}
+
+.list-controls .listtext {
+    margin: auto;
+}
+
+.listtext span {
+    font-size: 0.9em;
+    transition: all 0.1s ease-in-out;
+}
+
+.listtext span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.listtext .active {
+    font-size: 1em;
+    font-family: roboto_bold;
+    color: white;
+}
+
+.righticon i, .lefticon i {
+    transition: all 0.1s ease-in-out;
+    font-size: 1.3em;
+}
+
+.righticon i:hover {
+    margin-left: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.lefticon i:hover {
+    margin-right: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-container ul .menu-small-item {
+    padding: 5px;
+    background-color: #ffffff0f;
+    padding-left: 22px;
+    font-size: 0.9em;
+}
+
+.menu-container ul .menu-small-item.active {
+    background-color: #ffffff26;
+    padding-left: 22px;
+}
+
+.menu-container ul .menu-small-item:hover {
+    border-left: 3px solid white;
+    background-color: #ffffff26;
+    cursor: pointer;
+    padding-left: 22px;
+    color: white;
+}
+
+.menu-container ul .menu-small-item i {
+    font-size: 0.9em;
+    width: 15px;
+    margin-top: 2px;
+}
+
+.menu-container ul .menu-small-item span {
+    font-size: 1em;
+    margin: auto;
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+.menu-container ul li .fa.fa-minus {
+    font-size: 0.9em;
+    margin-top: 3px;
+    width: 20px;
+}

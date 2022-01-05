@@ -1,0 +1,52 @@
+.frame-data {
+    padding: 15px;
+}
+
+.frame-big-title {
+    font-size: 1.8em;
+    color: white;
+    margin: 0;
+}
+
+.frame-ullist {
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ffffff52;
+    list-style: none;
+}
+
+.frame-ullist li {
+    border-top: 1px solid #ffffff52;
+    border-left: 0px solid white;
+    background-color: #ffffff00;
+    transition: all 0.1s ease-in-out;
+    color: #ffffffbf;
+    padding: 3px;
+    padding-left: 10px;
+}
+
+.frame-ullist .active {
+    border-left: 3px solid white;
+    background-color: #ffffff26;
+    cursor: pointer;
+    color: white;
+}
+
+.frame-ullist li:hover {
+    border-left: 3px solid white;
+    background-color: #ffffff26;
+    cursor: pointer;
+    color: white;
+}
+
+.title-big {
+    margin: 0;
+    font-size: 1em;
+}
+
+.title-small {
+    margin: 0;
+    margin-top: 2px;
+    font-size: 0.7em;
+}

@@ -1,0 +1,426 @@
+.inbox.container {
+    padding-bottom: 15px;
+}
+
+.mail-table {
+    width: 100%;
+    color: white;
+    table-layout: fixed;
+}
+
+.mail-table tr th {
+    text-align: left;
+}
+
+.mail-table tr td, .mail-table tr th {
+    border-bottom: 1px solid #ffffff52;
+}
+
+.mail-table tr td:first-child {
+    padding-left: 15px;
+}
+
+.mail-table tr:first-child {
+    height: 40px;
+    cursor: default;
+}
+
+.mail-table tr:first-child:hover {
+    background-color: #ffffff00;
+}
+
+.mail-table tr {
+    height: 35px;
+    cursor: pointer;
+    background-color: #ffffff00;
+    transition: all 0.1s ease-in-out;
+}
+
+.mail-table tr:hover {
+    background-color: #ffffff57;
+}
+
+.mail-table tr th:first-child {
+    width: 50px;
+}
+
+.mail-table tr th:last-child {
+    width: 140px;
+}
+
+.mail-table-icon {
+    font-size: 1.5em;
+}
+
+.mail-table .mail-table-unopened {
+    background-color: #ffffff26;
+}
+
+/*mail-table-bottom*/
+.mail-table-bottom {
+    width: 100%;
+    color: white;
+    table-layout: fixed;
+}
+
+.mail-table-bottom tr th {
+    text-align: left;
+}
+
+.mail-table-bottom tr td {
+    border-bottom: 1px solid #ffffff52;
+}
+
+.mail-table-bottom tr td:first-child {
+    padding-left: 15px;
+}
+
+.mail-table-bottom tr:first-child {
+    height: 0px;
+    cursor: default;
+}
+
+.mail-table-bottom tr:first-child:hover {
+    background-color: #ffffff00;
+}
+
+.mail-table-bottom tr {
+    height: 35px;
+    cursor: pointer;
+    background-color: #ffffff00;
+    transition: all 0.1s ease-in-out;
+}
+
+.mail-table-bottom tr:hover {
+    background-color: #ffffff57;
+}
+
+.mail-table-bottom tr th:first-child {
+    width: 50px;
+}
+
+.mail-table-bottom tr th:nth-child(2) {
+    max-width: 250px;
+}
+
+.mail-table-bottom tr th:last-child {
+    width: 140px;
+}
+
+.mail-table-bottom-icon {
+    font-size: 1.5em;
+}
+
+.mail-table-bottom .mail-table-unopened {
+    background-color: #ffffff26;
+}
+
+/*open-letter*/
+.open-letter {
+    border-bottom: 1px solid #ffffff52;
+}
+
+.open-letter-header {
+    padding: 10px;
+}
+
+table tbody .open-letter-table td {
+    border-bottom: 3px solid white;
+}
+
+table tbody .open-letter-table {
+    background-color: #ffffff57;
+}
+
+.letter-sender-pic {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: inline-block;
+}
+
+.open-letter-sender-info {
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+    height: 38px;
+    padding-top: 6px;
+}
+
+.letter-sender-fullname {
+    margin: 0;
+    font-family: roboto_bold;
+}
+
+.letter-sender-address {
+    margin: 0;
+    font-size: 0.8em;
+    color: #ffffffbf;
+}
+
+.letter-content p {
+    color: white;
+    text-align: justify;
+}
+.button-type1 {
+    border: 1px solid #0000002e;
+    height: 30px;
+    border-radius: 5px;
+    background: none;
+    background-color: #0000002b;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    color: #ffffffeb;
+    outline: none;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.button-type1:hover {
+    cursor: pointer;
+    background-color: #ffffffd4;
+    color: #000000d1;
+}
+
+.button-type1 i {
+    margin-right: 5px;
+}
+
+/*send mail*/
+.send.container {
+    margin-top: 15px;
+}
+
+.contact-send {
+    border: 1px solid #0000002e;
+    border-radius: 5px;
+    background: none;
+    background-color: #0000002b;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    color: #ffffffeb;
+    outline: none;
+    padding: 5px;
+    display: inline-block;
+    margin: 0px;
+}
+
+.contact-send i {
+    margin-left: 5px;
+}
+
+.contact-send i:hover {
+    cursor: pointer;
+}
+
+.contact-send-title {
+    display: inline-block;
+    color: white;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-send-title2 {
+    display: inline-block;
+    color: white;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    margin-left: 15px;
+    margin-right: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-send-title3 {
+    color: white;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.contact-send-mail-title {
+    border: 1px solid #0000002e;
+    border-radius: 5px;
+    background: none;
+    background-color: #0000002b;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    color: #ffffffeb;
+    outline: none;
+    width: calc(100% - 85px);
+    padding: 5px;
+    display: inline-block;
+    transition: all 0.1s ease-in-out;
+}
+
+.contacts-input-container {
+    padding: 15px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #ffffff52;
+    padding-top: 5px;
+}
+
+.mail-title-container {
+    border-bottom: 1px solid #ffffff52;
+}
+
+.mail-content-area {
+    border: none;
+    background: none;
+    background-color: #0000002b;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    color: #ffffffeb;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    resize: none;
+    min-height: 140px;
+}
+
+.float-container-content-container {
+    position: fixed;
+    width: 500px;
+    height: 400px;
+    bottom: 0;
+    right: 15px;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 0px 5px 1px #00000085;
+    display: none;
+    backdrop-filter: saturate(100%) blur(20px);
+}
+
+.float-container-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-position: center;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.float-container-content {
+    background-color: #00000038;
+    height: 100%;
+    z-index: 15;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.button-type1.addcontact {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.mail-send-button-container {
+    padding: 15px;
+    border-top: 1px solid #ffffff52;
+}
+
+.button-type-mail-send {
+    border: 1px solid #0000002e;
+    border-right: none;
+    height: 30px;
+    border-radius: 5px;
+    background: none;
+    background-color: #0000002b;new-mail-float
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    color: #ffffffeb;
+    outline: none;
+    margin-bottom: 10px;
+    transition: all 0.1s ease-in-out;
+    vertical-align: top;
+}
+
+.button-type-mail-send .fa {
+    margin-right: 5px;
+}
+
+.button-type-mail-function {
+    border: 1px solid #0000002e;
+    border-right: none;
+    height: 30px;
+    background: none;
+    background-color: #0000002b;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    color: #ffffffeb;
+    outline: none;
+    margin:0;
+    transition: all 0.1s ease-in-out;
+    vertical-align: top;
+}
+
+.button-type-mail-function.start, .button-type-mail-send.start {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.button-type-mail-function.end, .button-type-mail-send.end {
+    border-radius: 0px 5px 5px 0px;
+    border-right: 1px solid #0000002e;
+    margin-right: 5px;
+}
+
+.button-type-mail-function:hover, .button-type-mail-send:hover {
+    cursor: pointer;
+    background-color: #ffffffd4;
+    color: #000000d1;
+}
+
+.dash-container-header.mail-send {
+    height:  17px;
+}
+
+.dash-container-header.mail-send h2 {
+    height: 17px;
+    float: left;
+}
+
+.dash-container-header.mail-send i {
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-send-mail-title:focus {
+    border: 1px solid white;
+}
+
+.float-new-mail {
+    width: 85px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 0px 5px 1px #00000085;
+    background-color: #00000038;
+    position: fixed;
+    right: 15px;
+    bottom: 0px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.float-new-mail:hover {
+    cursor: pointer;
+    background-color: #ffffffd4;
+    color: #000000d1;
+}
+
+.new-mail-float {
+    margin-right: 3px;
+    font-size: 0.9em;
+}
+
+.new-mail-float-title {
+    margin: 0;
+    font-family: roboto_bold;
+    font-size: 0.9em;
+    margin-left: 5px;
+}

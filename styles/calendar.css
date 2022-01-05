@@ -1,0 +1,173 @@
+.calendar.container {
+    box-shadow: 0px 0px 5px 1px #00000085;
+    background-color: #00000038;
+    vertical-align: top;
+    margin: 5px;
+}
+
+.sport-calendar-table {
+    width: 100%;
+    color: white;
+    table-layout: fixed;
+}
+
+.sport-calendar-table tr td {
+    padding: 5px;
+    vertical-align: top;
+    padding-bottom: 0px;
+}
+
+.sport-calendar-table tr th {
+    height: 45px;
+}
+
+.sport-calendar-table tr th.active {
+    border-bottom: 3px solid white;
+}
+
+.sport-calendar-table tr th{
+    border-bottom: 1px solid #ffffff52;
+}
+
+.sport-calendar-table tr .active {
+    background-color: #ffffff26;
+}
+
+.calendar-table-header {
+    display: flex;
+    color: white;
+    font-family: roboto_bold;
+    font-size: 1.3em;
+    height: 45px;
+    border-bottom: 1px solid #ffffff52;
+}
+
+.calendar-table-header i:hover {
+    cursor: pointer;
+}
+
+.calendar-table-header .left {
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.calendar-table-header .left i {
+    float: right;
+    margin-right: 0px;
+    font-size: 1.2em;
+    transition: all 0.1s ease-in-out;
+}
+
+.calendar-table-header .left i:hover {
+    margin-right: 3px;
+}
+
+.calendar-table-header .right {
+    width: 25px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.calendar-table-header .right i {
+    float: left;
+    margin-left: 0px;
+    font-size: 1.2em;
+    transition: all 0.1s ease-in-out;
+}
+
+.calendar-table-header .right i:hover {
+    margin-left: 3px;
+}
+
+.calendar-table-header .text {
+    margin: auto;
+}
+
+.calendar-event-box {
+    border: 1px solid #ffffff52;
+    border-radius: 5px;
+    background-color: #00000029;
+    margin-bottom: 5px;
+}
+
+.button-event-title {
+    border: 1px solid #0000002e;
+    padding: 3px;
+    border-radius: 5px;
+    background: none;
+    background-color: #0000002b;
+    font-size: 0.9em;
+    font-family: roboto_bold;
+    color: #ffffffeb;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 10px);
+}
+
+.button-event-title:hover {
+    cursor: pointer;
+    background-color: #ffffffd4;
+    color: #000000d1;
+    transition: all 0.1s ease-in-out;
+}
+
+.event-info-container {
+    text-align: center;
+    padding: 5px;
+    padding-top: 0px;
+}
+
+.event-info-span {
+    font-size: 0.7em;
+    border-radius: 5px;
+    padding: 3px;
+    display: inline-block;
+    margin: 2px;
+    margin-bottom: 4px;
+}
+
+.event-info-span.green {
+    background-color: #5bb85c;
+}
+
+.event-info-span.yellow {
+    background-color: #f1ad4e;
+}
+
+.event-info-span.red {
+    background-color: #d8534f;
+}
+
+.event-info-span.blue {
+    background-color: #5bc0de;
+}
+
+.event-info-span.darkblue {
+    background-color: #347ab7;
+}
+
+.event-alt-info-container {
+    border-top: 1px solid #ffffff52;
+}
+
+.event-alt-info-container p {
+    text-align: center;
+    margin: 0;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.event-table-description {
+    border-top: 1px solid #ffffff52;
+    color: white;
+    padding: 5px;
+}
+
+.event-table-description-title {
+    font-size: 0.8em;
+    font-family: roboto_bold;
+}

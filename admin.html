@@ -1,0 +1,277 @@
+<html lang="hu">
+    <head>
+        <title>Sports - Sportoló átigazolás kezelés [Prototype]</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles/base.css">
+        <link rel="stylesheet" type="text/css" href="styles/admin.css">
+        <link rel="stylesheet" type="text/css" href="styles/profile.css">
+        <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="scripts/sports.js"></script>
+    </head>
+    <body class="sitetheme">
+        <div class="sidebar">
+            <div class="logo-container">
+                <span class="logo-sport-dash">Sports</span>
+            </div>
+            <div class="user-container">
+                <div class="pic-container">
+                    <img class="dash-profilepic" src="images/profpic1.jpg"/>
+                </div>
+                <div class="user-data-container">
+                    <div class="user-data-center-container">
+                        <p class="user-fullname">Csirip Antal</p>
+                        <p class="user-role">Frontendes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-container">
+                <ul>
+                    <li onclick="location.href = 'profile.html'">
+                        <i class="fa fa-user"></i>
+                        <span>Adatlapom</span>
+                    </li>
+                    <li onclick="location.href = 'index.html'">
+                        <i class="fa fa-columns"></i>
+                        <span>Áttekintés</span>
+                    </li>
+                    <li onclick="location.href = 'users.html'">
+                        <i class="fa fa-users"></i>
+                        <span>Felhasználók</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li onclick="location.href = 'functions.html'">
+                        <i class="fa fa-address-book"></i>
+                        <span>Szervezeti funkciók</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li class="active">
+                        <i class="fa fa-pen-fancy"></i>
+                        <span>Adminisztráció</span>
+                        <i class="fa fa-minus"></i>
+                    </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-clipboard-check"></i>
+                            <span>Igazolt státusz igénylés</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-tasks"></i>
+                            <span>Igazolt státusz kezelés</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-flag-checkered"></i>
+                            <span>Versenyzési engedély</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-user-tag"></i>
+                            <span>Sportoló átigazolás igénylés</span>
+                        </li>
+                        <li class="menu-small-item active">
+                            <i class="fa fa-user-edit"></i>
+                            <span>Sportoló átigazolás kezelés</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-users"></i>
+                            <span>Edző tagszervezet váltás</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-file-import"></i>
+                            <span>Sportolók betöltése</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-user-times"></i>
+                            <span>Nem leigazolt sportolók</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-school"></i>
+                            <span>Iskolák kezelése</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-user-cog"></i>
+                            <span>Jogosultságkezelés</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-cogs"></i>
+                            <span>Paraméterkezelés</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-poll-h"></i>
+                            <span>Eredményjelző</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-clock"></i>
+                            <span>Feladat ütemezés</span>
+                        </li>
+                        <li class="menu-small-item">
+                            <i class="fa fa-file-pdf"></i>
+                            <span>PDF elemek betöltő</span>
+                        </li>
+                    <li onclick="location.href = 'champ.html'">
+                        <i class="fa fa-trophy"></i>
+                        <span>Verseny kezelés</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>Naptár</span>
+                    </li>
+                    <li onclick="location.href = 'calendar.html'">
+                        <i class="fa fa-stopwatch"></i>
+                        <span>Edzésnapló</span>
+                    </li>
+                    <li onclick="location.href = 'mail.html'">
+                        <i class="fa fa-envelope"></i>
+                        <span>Üzenetek</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-chart-bar"></i>
+                        <span>Lekérdezések</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                </ul>
+            </div>
+            <div id="themes" class="theme-selector">
+                <div onclick="changeTheme('bg1')" class="block theme1"></div>
+                <div onclick="changeTheme('bg2')" class="block theme2"></div>
+                <div onclick="changeTheme('bg3')" class="block theme3"></div>
+                <div onclick="changeTheme('bg4')" class="block theme4"></div>
+                <div onclick="changeTheme('bg5')" class="block theme5"></div>
+                <div onclick="changeTheme('bg6')" class="block theme6"></div>
+                <div onclick="changeTheme('bg7')" class="block theme7"></div>
+                <div onclick="changeTheme('bg8')" class="block theme8"></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="admin container">
+                <div class="dash-container-header">
+                    <h2>Sportoló átigazolás kezelés</h2>
+                </div>
+                <div class="dash-container-content-alt">
+                    <div class="admin-table-control-container up">
+                        <div class="admin-list-controls">
+                            <div class="lefticon">
+                                <i class="fa fa-angle-double-left userlist"></i>
+                            </div>
+                            <div class="lefticon">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="listtext">
+                                <span class="active">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                            <div class="righticon">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="righticon">
+                                <i class="fa fa-angle-double-right userlist"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <table cellspacing="0" cellpadding="0" class="admin-table">
+                        <tr>
+                            <th>Sportoló neve</th>
+                            <th>Nyilv. szám</th>
+                            <th>Jelenlegi tagszervezet</th>
+                            <th>Fogadó tagszervezet</th>
+                            <th>Sport tevékenység</th>
+                            <th>Átig. lap</th>
+                            <th>Kltsg. nyil.</th>
+                            <th>Igény. dátum</th>
+                            <th class="admin-table-functions-th">Műveletek</th>
+                        </tr>
+                        <tr>
+                            <td>Csirip Antal</td>
+                            <td>12345</td>
+                            <td>Ketrec bontó</td>
+                            <td>Játszótér bontó</td>
+                            <td>((dizroj))</td>
+                            <td>
+                                <input type="checkbox" id="check" name="check-1" value="">
+                                <label for="check"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="check2" checked name="check-1" value="">
+                                <label for="check2"></label>
+                            </td>
+                            <td>2019.10.16</td>
+                            <td class="admin-table-func">
+                                <i class="fa fa-check"></i>
+                                <i class="fa fa-sync-alt"></i>
+                                <i class="fa fa-times"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kék Pityu</td>
+                            <td>56789</td>
+                            <td>Farágó</td>
+                            <td>Játszótér bontó</td>
+                            <td>Evés</td>
+                            <td>
+                                <input type="checkbox" id="check3" checked name="check-1" value="">
+                                <label for="check3"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="check4" checked name="check-1" value="">
+                                <label for="check4"></label>
+                            </td>
+                            <td>2019.10.13</td>
+                            <td class="admin-table-func">
+                                <i class="fa fa-check"></i>
+                                <i class="fa fa-sync-alt"></i>
+                                <i class="fa fa-times"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rozsdás Sándor</td>
+                            <td>53213</td>
+                            <td>Ketrec bontó</td>
+                            <td>Játszótér bontó</td>
+                            <td>Meow</td>
+                            <td>
+                                <input type="checkbox" id="check5" checked name="check-1" value="">
+                                <label for="check5"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="check6" name="check-1" value="">
+                                <label for="check6"></label>
+                            </td>
+                            <td>2019.10.12</td>
+                            <td class="admin-table-func">
+                                <i class="fa fa-check"></i>
+                                <i class="fa fa-sync-alt"></i>
+                                <i class="fa fa-times"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="admin-table-control-container down">
+                        <div class="admin-list-controls">
+                            <div class="lefticon">
+                                <i class="fa fa-angle-double-left userlist"></i>
+                            </div>
+                            <div class="lefticon">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="listtext">
+                                <span class="active">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                            <div class="righticon">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="righticon">
+                                <i class="fa fa-angle-double-right userlist"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

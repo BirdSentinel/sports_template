@@ -1,0 +1,136 @@
+.admin-table {
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    table-layout: fixed;
+}
+
+.admin-table tr th {
+    font-family: roboto_bold;
+    text-align: left;
+    border-bottom: 1px solid #ffffff52;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.admin-table tr td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.admin-table tr:hover {
+    background-color: #ffffff00;
+    transition: all 0.1s ease-in-out;
+}
+
+.admin-table tr:nth-child(1):hover {
+    background-color: #ffffff00;
+}
+
+.admin-table tr:hover {
+    background-color: #ffffff26;
+}
+
+.admin-table-func .fa {
+    font-size: 1.4em;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.admin-table-control-container.up {
+    border-bottom: 1px solid #ffffff52;
+}
+
+.admin-table-control-container.down {
+    border-top: 1px solid #ffffff52;
+}
+
+input[type=checkbox]+label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f00c";
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+    padding-left: 2px;
+    padding-right: 4px;
+}
+
+input[type=checkbox]+label:active:before {
+    transform: scale(0.8);
+}
+
+input[type=checkbox]:checked+label:before {
+    background-color: white;
+    color: #848484;
+}
+
+input[type=checkbox]:disabled+label:before {
+    transform: scale(1);
+    border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled+label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+}
+
+.admin-list-controls {
+    display: flex;
+    color: #ffffffbf;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 200px;
+    margin: auto;
+}
+
+.admin-list-controls {
+    display: flex;
+    color: #ffffffbf;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.admin-list-controls .lefticon {
+    float: left;
+    width: 20px;
+    text-align: right;
+    margin-top: 9px;
+}
+
+.admin-list-controls .righticon {
+    float: right;
+    width: 20px;
+    margin-top: 9px;
+}
+
+.admin-list-controls .listtext {
+    margin: auto;
+}
+
+.admin-table-functions-th {
+    width: 86px;
+}

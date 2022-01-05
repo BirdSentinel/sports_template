@@ -1,0 +1,310 @@
+<html lang="hu">
+    <head>
+        <title>Sports - Adatlapom [Prototype]</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles/base.css">
+        <link rel="stylesheet" type="text/css" href="styles/profile.css">
+        <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="scripts/sports.js"></script>
+    </head>
+    <body class="sitetheme">
+        <div class="sidebar">
+            <div class="logo-container">
+                <span class="logo-sport-dash">Sports</span>
+            </div>
+            <div class="user-container">
+                <div class="pic-container">
+                    <img class="dash-profilepic" src="images/profpic1.jpg"/>
+                </div>
+                <div class="user-data-container">
+                    <div class="user-data-center-container">
+                        <p class="user-fullname">Csirip Antal</p>
+                        <p class="user-role">Frontendes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-container">
+                <ul>
+                    <li class="active" onclick="location.href = 'profile.html'">
+                        <i class="fa fa-user"></i>
+                        <span>Adatlapom</span>
+                    </li>
+                    <li onclick="location.href = 'index.html'">
+                        <i class="fa fa-columns"></i>
+                        <span>Áttekintés</span>
+                    </li>
+                    <li onclick="location.href = 'users.html'">
+                        <i class="fa fa-users"></i>
+                        <span>Felhasználók</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li onclick="location.href = 'functions.html'">
+                        <i class="fa fa-address-book"></i>
+                        <span>Szervezeti funkciók</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li onclick="location.href = 'admin.html'">
+                        <i class="fa fa-pen-fancy"></i>
+                        <span>Adminisztráció</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li onclick="location.href = 'champ.html'">
+                        <i class="fa fa-trophy"></i>
+                        <span>Verseny kezelés</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>Naptár</span>
+                    </li>
+                    <li onclick="location.href = 'calendar.html'">
+                        <i class="fa fa-stopwatch"></i>
+                        <span>Edzésnapló</span>
+                    </li>
+                    <li onclick="location.href = 'mail.html'">
+                        <i class="fa fa-envelope"></i>
+                        <span>Üzenetek</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-chart-bar"></i>
+                        <span>Lekérdezések</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                </ul>
+            </div>
+            <div id="themes" class="theme-selector">
+                <div onclick="changeTheme('bg1')" class="block theme1"></div>
+                <div onclick="changeTheme('bg2')" class="block theme2"></div>
+                <div onclick="changeTheme('bg3')" class="block theme3"></div>
+                <div onclick="changeTheme('bg4')" class="block theme4"></div>
+                <div onclick="changeTheme('bg5')" class="block theme5"></div>
+                <div onclick="changeTheme('bg6')" class="block theme6"></div>
+                <div onclick="changeTheme('bg7')" class="block theme7"></div>
+                <div onclick="changeTheme('bg8')" class="block theme8"></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="profile container">
+                <div class="dash-container-header">
+                    <h2>Sportolói adatlap</h2>
+                </div>
+                <div class="dash-container-content-alt">
+                    <div class="profile-data">
+                        <div class="user-name-data">
+                            <div class="user-name-data-container">
+                                <h1 class="user-big-title">Csirip Antal</h1>
+                                <h3 class="user-big-role">Frontendes</h3>
+                            </div>
+                        </div>
+                        <img class="main-profilepic" src="images/profpic1.jpg"/>
+                    </div>
+                    
+                    <div class="action-button-container">
+                        <span class="action-buttons-title">Műveletek:</span>
+                        <button class="button-type1"><i class="fa fa-pen"></i>Szerkesztés</button>
+                        <button class="button-type1"><i class="fa fa-envelope-open-text"></i>Meghívó újraküldése</button>
+                        <button class="button-type1"><i class="fa fa-user-times"></i>Kizárás</button>
+                        <button class="button-type1"><i class="fa fa-history"></i>Történet</button>
+                        <button class="button-type1"><i class="fa fa-question-circle"></i>Anonimizálás</button>
+                        <button class="button-type1"><i class="fa fa-calendar-minus"></i>Edzési adatok törlése</button>
+                    </div>
+                    <div class="action-button-container">
+                        <span class="action-buttons-title">Gyors navigáció:</span>
+                        <button onclick="showIt('szemelyes')" class="button-type1">Személyes adatok</button>
+                        <button onclick="showIt('elerhetoseg')" class="button-type1">Elérhetőség</button>
+                        <button onclick="showIt('gondviselo')" class="button-type1">Gondviselő adatai</button>
+                        <button onclick="showIt('iskolak')" class="button-type1">Iskolák</button>
+                        <button class="button-type1 disabled">Tagszervezetek</button>
+                        <button class="button-type1 disabled">Edzők</button>
+                        <button class="button-type1 disabled">Szakágak</button>
+                        <button class="button-type1 disabled">Csoport tagságok</button>
+                        <button class="button-type1 disabled">Keret tagságok</button>
+                        <button class="button-type1 disabled">Tábor tagságok</button>
+                        <button class="button-type1 disabled">Versenyzői támogatások</button>
+                        <button onclick="showIt('engedelyek')" class="button-type1">Engedélyek</button>
+                        <button class="button-type1 disabled">Nemzetközi eredmény</button>
+                        <button class="button-type1 disabled">Összes eredmény</button>
+                        <button class="button-type1 disabled">Felmérés eredmény</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profiledata container" id="szemelyes">
+                <div class="dash-container-header">
+                    <h2>Személyes adatok</h2>
+                </div>
+                <div class="dash-container-content">
+                    <table class="user-data-table">
+                        <tr>
+                            <td>Ország:</td>
+                            <td>Magyarország</td>
+                        </tr>
+                        <tr>
+                            <td>Nem:</td>
+                            <td>Férfi</td>
+                        </tr>
+                        <tr>
+                            <td>Születési név:</td>
+                            <td>Antennás Csirke</td>
+                        </tr>
+                        <tr>
+                            <td>Születési dátum:</td>
+                            <td>2019.03.05</td>
+                        </tr>
+                        <tr>
+                            <td>Születési hely:</td>
+                            <td>Kalitka</td>
+                        </tr>
+                        <tr>
+                            <td>Anyja születési neve:</td>
+                            <td>Antennásné Csirke</td>
+                        </tr>
+                        <tr>
+                            <td>Nyilvántartási szám:</td>
+                            <td>123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Nyilvántartási szám:</td>
+                            <td>123123123</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="profiledata container" id="elerhetoseg">
+                <div class="dash-container-header">
+                    <h2>Sportoló elérhetősége</h2>
+                </div>
+                <div class="dash-container-content">
+                    <table class="user-data-table">
+                        <tr>
+                            <td>Település:</td>
+                            <td>Nappali</td>
+                        </tr>
+                        <tr>
+                            <td>Irányítószám:</td>
+                            <td>1234</td>
+                        </tr>
+                        <tr>
+                            <td>Cím:</td>
+                            <td>Kalitka 2. ülő rúd</td>
+                        </tr>
+                        <tr>
+                            <td>Telefonszám:</td>
+                            <td>Madár vagyok henlo</td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td>csirip.antal@Sports.hu</td>
+                        </tr>
+                        <tr>
+                            <td>Anyja születési neve:</td>
+                            <td>Antennásné Csirke</td>
+                        </tr>
+                        <tr>
+                            <td>Nyilvántartási szám:</td>
+                            <td>123456789</td>
+                        </tr>
+                        <tr>
+                            <td>Nyilvántartási szám:</td>
+                            <td>123123123</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="profiledata container" id="gondviselo">
+                <div class="dash-container-header">
+                    <h2>Gondviselő adatai</h2>
+                </div>
+                <div class="dash-container-content">
+                    <table class="user-data-table">
+                        <tr>
+                            <td>Gondviselő neve:</td>
+                            <td>Molnár István</td>
+                        </tr>
+                        <tr>
+                            <td>Gondviselő tartózkodási címe:</td>
+                            <td>Ott a kupac xbox mellett forrasztópákával a kezében</td>
+                        </tr>
+                        <tr>
+                            <td>Gondviselő elérhetősége:</td>
+                            <td>www.stephenmiller.hu</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="profiledata tableheader container" id="iskolak">
+                <div class="dash-container-header">
+                    <h2>Iskolák</h2>
+                </div>
+                <div class="dash-container-content-alt">
+                    <table cellspacing="0" cellpadding="0" class="user-data-table-header">
+                        <tr>
+                            <th>OM azonosító</th>
+                            <th>Település</th>
+                            <th>Iskola neve</th>
+                            <th>Mettől</th>
+                            <th>Meddig</th>
+                        </tr>
+                        <tr>
+                            <td>28758232OM</td>
+                            <td>Budapest</td>
+                            <td>Csirip Suli</td>
+                            <td>2019</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <td>28758232OM</td>
+                            <td>Budapest</td>
+                            <td>Csirip Suli</td>
+                            <td>2019</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <td>28758232OM</td>
+                            <td>Budapest</td>
+                            <td>Csirip Suli</td>
+                            <td>2019</td>
+                            <td>2020</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="profiledata tableheader container" id="engedelyek">
+                <div class="dash-container-header">
+                    <h2>Engedélyek</h2>
+                </div>
+                <div class="dash-container-content-alt">
+                    <table cellspacing="0" cellpadding="0" class="user-data-table-header">
+                        <tr>
+                            <th>Engedély neve</th>
+                            <th>Korosztály</th>
+                            <th>Engedély státusza</th>
+                            <th>Érvényesség kezdete</th>
+                            <th>Érvényesség vége</th>
+                        </tr>
+                        <tr>
+                            <td>Játékok lebontása</td>
+                            <td>Kis csirip</td>
+                            <td>Aktív</td>
+                            <td>2019</td>
+                            <td>Soha</td>
+                        </tr>
+                        <tr>
+                            <td>Játszótér lebontása</td>
+                            <td>Nagy csirip</td>
+                            <td>Aktív</td>
+                            <td>2019</td>
+                            <td>Soha</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

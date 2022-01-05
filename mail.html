@@ -1,0 +1,220 @@
+<html lang="hu">
+    <head>
+        <title>Sports - Üzenetek [Prototype]</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles/base.css">
+        <link rel="stylesheet" type="text/css" href="styles/mail_alt.css">
+        <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="scripts/sports.js"></script>
+    </head>
+    <body class="sitetheme">
+        <div class="sidebar">
+            <div class="logo-container">
+                <span class="logo-sport-dash">Sports</span>
+            </div>
+            <div class="user-container">
+                <div class="pic-container">
+                    <img class="dash-profilepic" src="images/profpic1.jpg"/>
+                </div>
+                <div class="user-data-container">
+                    <div class="user-data-center-container">
+                        <p class="user-fullname">Csirip Antal</p>
+                        <p class="user-role">Frontendes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-container">
+                <ul>
+                    <li onclick="location.href = 'profile.html'">
+                        <i class="fa fa-user"></i>
+                        <span>Adatlapom</span>
+                    </li>
+                    <li onclick="location.href = 'index.html'">
+                        <i class="fa fa-columns"></i>
+                        <span>Áttekintés</span>
+                    </li>
+                    <li onclick="location.href = 'users.html'">
+                        <i class="fa fa-users"></i>
+                        <span>Felhasználók</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li onclick="location.href = 'functions.html'">
+                        <i class="fa fa-address-book"></i>
+                        <span>Szervezeti funkciók</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li onclick="location.href = 'admin.html'">
+                        <i class="fa fa-pen-fancy"></i>
+                        <span>Adminisztráció</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li onclick="location.href = 'champ.html'">
+                        <i class="fa fa-trophy"></i>
+                        <span>Verseny kezelés</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>Naptár</span>
+                    </li>
+                    <li onclick="location.href = 'calendar.html'">
+                        <i class="fa fa-stopwatch"></i>
+                        <span>Edzésnapló</span>
+                    </li>
+                    <li class="active">
+                        <i class="fa fa-envelope"></i>
+                        <span>Üzenetek</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-chart-bar"></i>
+                        <span>Lekérdezések</span>
+                        <i class="fa fa-plus"></i>
+                    </li>
+                </ul>
+            </div>
+            <div id="themes" class="theme-selector">
+                <div onclick="changeTheme('bg1')" class="block theme1"></div>
+                <div onclick="changeTheme('bg2')" class="block theme2"></div>
+                <div onclick="changeTheme('bg3')" class="block theme3"></div>
+                <div onclick="changeTheme('bg4')" class="block theme4"></div>
+                <div onclick="changeTheme('bg5')" class="block theme5"></div>
+                <div onclick="changeTheme('bg6')" class="block theme6"></div>
+                <div onclick="changeTheme('bg7')" class="block theme7"></div>
+                <div onclick="changeTheme('bg8')" class="block theme8"></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+
+            <div class="inbox container">
+                <div class="dash-container-header">
+                    <h2>Beérkezett üzenetek</h2>
+                </div>
+                <div class="dash-container-content-alt">
+                    <table cellspacing="0" cellpadding="0" class="mail-table">
+                        <tr>
+                            <th></th>
+                            <th>Feladó</th>
+                            <th>Tárgy</th>
+                            <th>Dátum</th>
+                        </tr>
+                        <tr class="mail-table-unopened">
+                            <td><i class="fa fa-envelope mail-table-icon"></i></td>
+                            <td>Dr. Hepi Kacsa</td>
+                            <td>HONK HONK</td>
+                            <td>2019.10.14 10:36</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope-open-text mail-table-icon"></i></td>
+                            <td>Rozsdás Sándor</td>
+                            <td>Esemény meghívás</td>
+                            <td>2019.10.13 14:53</td>
+                        </tr>
+                        <tr class="open-letter-table">
+                            <td><i class="fa fa-envelope-open-text mail-table-icon"></i></td>
+                            <td>Zöld Pityu</td>
+                            <td>Csirip csirip</td>
+                            <td>2019.10.13 09:30</td>
+                        </tr>
+                    </table>
+                    <div class="open-letter">
+                        <div class="open-letter-header">
+                            <img class="letter-sender-pic" src="images/profpic7.jpg"/>
+                            <div class="open-letter-sender-info">
+                                <p class="letter-sender-fullname">Zöld Pityu</p>
+                                <p class="letter-sender-address">zold.pityu@Sports.hu</p>
+                            </div>
+                            <div class="letter-content">
+                                <p>Lórum ipse nem bolós sötvét, hanem csergés. Füttyös bölygő közves föverem magán pacskos kányos államilag szokos brás szolt belésből. A vális tálhatos, eges, felező evető és hatalós parkások nyomfanszán szinos tolak barák magukban jaskodják a tálhatos bető mozások, gyöngető mozások, a guszás banumokban a sóvalan, lázlan mozások, a bulta banumokban a szeres mozások, továbbá a tranda kötéséért képző tolakokat is. A kötélön kívül láns, süke túrós pegős kolis mozás matorként tatós. A csíkos füttyös bolyák, a cákolás, a pegős kolis mozások csoltsága, továbbá a forpaságok kítők, azaz olyan kötelezően tatós fájzok, amelyhez fityus nem barlant.</p>
+                            </div>
+                            <div class="letter-actions">
+                                <button class="button-type1"><i class="fa fa-reply"></i>Válasz</button>
+                                <button class="button-type1"><i class="fa fa-arrow-right"></i>Továbbítás</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table cellspacing="0" cellpadding="0" class="mail-table-bottom">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope-open-text mail-table-icon"></i></td>
+                            <td>Boomer Béla</td>
+                            <td>Meghívás sörpongra</td>
+                            <td>2019.10.13 04:20</td>
+                        </tr>
+                        <tr class="mail-table-unopened">
+                            <td><i class="fa fa-envelope mail-table-icon"></i></td>
+                            <td>Dr. Hepi Kacsa</td>
+                            <td>HONK HONK</td>
+                            <td>2019.10.12 11:42</td>
+                        </tr>
+                        <tr class="mail-table-unopened">
+                            <td><i class="fa fa-envelope mail-table-icon"></i></td>
+                            <td>Cattozie Catto Cicae</td>
+                            <td>Cica játék igénylés</td>
+                            <td>2019.10.12 07:45</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope-open-text mail-table-icon"></i></td>
+                            <td>Kék Pityu</td>
+                            <td>Papagáj játék igénylés</td>
+                            <td>2019.10.11 19:24</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope-open-text mail-table-icon"></i></td>
+                            <td>Zöld Pityu</td>
+                            <td>Csip</td>
+                            <td>2019.10.09 01:52</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="float-new-mail" id="float-send-icon" onclick="showsend()">
+                <i class="fa fa-plus new-mail-float"></i><span class="new-mail-float-title">Új üzenet</span>
+            </div>
+
+            <div class="float-container-content-container" id="float-send">
+                <div class="float-container-bg">
+
+                </div>
+                <div class="float-container-content">
+                    <div class="dash-container-header mail-send">
+                        <h2>Új üzenet küldése</h2>
+                        <i class="fa fa-times" onclick="hidesend()"></i>
+                    </div>
+                    <div class="dash-container-content-alt">
+                        <div class="send-contacts">
+                            <div class="contacts-input-container">
+                                <p class="contact-send-title">Címzett:</p>
+                                <p class="contact-send">rozsdas.sandor@Sports.hu<i class="fa fa-times"></i></p>
+                                <p class="contact-send">zold.pityu@Sports.hu<i class="fa fa-times"></i></p>
+                                <p class="contact-send">kek.pityu@Sports.hu<i class="fa fa-times"></i></p>
+                                <p class="contact-send">boomer.bela@Sports.hu<i class="fa fa-times"></i></p>
+                                <button class="button-type1 addcontact"><i class="fa fa-user-plus"></i>Címzett hozzáadása...</button>
+                            </div>
+                            <div class="mail-title-container">
+                                <p class="contact-send-title2">Tárgy:</p>
+                                <input class="contact-send-mail-title" value="Lorem ipsum dolor sit..."/>
+                            </div>
+                            <div class="mail-content-container">
+                                <textarea class="mail-content-area">Lórum ipse már nem kályos, hanem zard. az illensés törpes és szűrű szitat, mint az alant - és sokszor sulga - trimán. A csira rozáraca többek között a fervés fegyzőjének, hosszús és málékony könyösségének térűje, a hézatos renség pajszata, valamint a szentek és a zalán szennái, sütkéi ábos szenór videnciója.</textarea>
+                            </div>
+                            <div class="mail-send-button-container">
+                                <button class="button-type-mail-send start"><i class="fa fa-paper-plane"></i>Küldés</button><button class="button-type-mail-send end"><i class="fa fa-file"></i>Piszkozat</button>
+
+                                <button class="button-type-mail-function start"><i class="fa fa-font"></i></button><button class="button-type-mail-function"><i class="fa fa-paperclip"></i></button><button class="button-type-mail-function"><i class="fa fa-link"></i></button><button class="button-type-mail-function"><i class="fa fa-images"></i></button><button class="button-type-mail-function end"><i class="fa fa-laugh-squint"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

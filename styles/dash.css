@@ -1,0 +1,210 @@
+/* pie dialog */
+.chart-container {
+    box-shadow: 0px 0px 5px 1px #00000085;
+    background-color: #00000038;
+    width: 210px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    backdrop-filter: saturate(100%) blur(20px);
+}
+
+.pie-data-container {
+
+}
+
+.pie-data-container p {
+    margin: 0;
+    color: white;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 4px;
+    font-family: roboto_bold;
+    font-size: 0.9em;
+}
+
+.pie1 {
+    color: #a600aa;
+}
+
+.pie2 {
+    color: #0a0;
+}
+
+.pie3 {
+    color: #f80;
+}
+
+.pie4 {
+    color: #08f;
+}
+
+.pie5 {
+    color: #ffd700;
+}
+
+.pie6 {
+    color: #a04;
+}
+
+.pie-chart-datas {
+    border-top: 1px solid #ffffff52;
+    padding: 8px;
+}
+
+.pie-chart-datas i {
+    margin-left: 10px;
+}
+
+.pie-chart-datas span {
+    color: white;
+    float: right;
+    font-family: roboto_bold;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+/* calendar dialog */
+.calendar-container {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    box-shadow: 0px 0px 5px 1px #00000085;
+    background-color: #00000038;
+    backdrop-filter: saturate(100%) blur(20px);
+}
+
+.calendar-table {
+    color: white;
+}
+
+.calendar-table tr {
+    height: 35px;
+}
+
+.calendar-table tr th {
+    width: 35px;
+    font-size: 0.9em;
+}
+
+.calendar-table tr td {
+    width: 35px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.calendar-table tr .last-month {
+    color: #ffffff42;
+}
+
+.calendar-table tr .actual {
+    background-color: #ffffff26;
+    border-radius: 50%;
+}
+
+.calendar-table tr .exam {
+    background-color: #2bff3961;
+    border-radius: 50%;
+}
+
+.calendar-table-header {
+    display: flex;
+    color: white;
+    font-family: roboto_bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.calendar-table-header i:hover {
+    cursor: pointer;
+}
+
+.calendar-table-header .left {
+    width: 25px;
+}
+
+.calendar-table-header .left i {
+    float: right;
+    margin-right: 0px;
+    font-size: 1.2em;
+    transition: all 0.1s ease-in-out;
+}
+
+.calendar-table-header .left i:hover {
+    margin-right: 3px;
+}
+
+.calendar-table-header .right {
+    width: 25px;
+}
+
+.calendar-table-header .right i {
+    float: left;
+    margin-left: 0px;
+    font-size: 1.2em;
+    transition: all 0.1s ease-in-out;
+}
+
+.calendar-table-header .right i:hover {
+    margin-left: 3px;
+}
+
+.calendar-table-header .text {
+    margin: auto;
+}
+
+
+/* practive dialog */
+.practice-container {
+    box-shadow: 0px 0px 5px 1px #00000085;
+    background-color: #00000038;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    backdrop-filter: saturate(100%) blur(20px);
+}
+
+.chart-diagram1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 30px solid #ffffff26;
+    border-left: 30px solid #ffffffbf;
+    transform: rotate(135deg);
+    display: inline-block;
+}
+
+.chart-diagram1-text {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    display: inline-flex;
+}
+
+.chart-diagram2-text {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+.chart-diagram-text-p {
+    color: white;
+    font-size: 1.5em;
+    font-family: roboto_bold;
+    margin: auto;
+}
+
+.chart-diagram2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 30px solid #ffffff26;
+    border-left: 30px solid #ffffffbf;
+    border-right: 30px solid #ffffffbf;
+    border-top: 30px solid #ffffffbf;
+    transform: rotate(135deg);
+    display: inline-block;
+    margin-left: 20px;
+}
